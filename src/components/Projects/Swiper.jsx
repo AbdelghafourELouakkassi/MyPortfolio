@@ -17,7 +17,7 @@ export default function SwiperUi({Projects}) {
   return (
     <>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={1}
         spaceBetween={30}
         freeMode={true}
         pagination={{
