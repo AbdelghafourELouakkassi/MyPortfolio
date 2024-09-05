@@ -1,0 +1,63 @@
+.projects-section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+.projects-section .project .links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+  flex-wrap: wrap;
+
+}
+
+.projects-section .project .title{
+  background-color:black;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+
+}
+
+.projects-section .project .utilities{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  margin-bottom: 15px;
+  
+
+}
+
+.utilities .utilitie-style{
+  background-color: black;
+  color:white;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.swiper {
+    width: 80%;
+    min-height: 100vh;
+    
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid;
+    min-height: 110vh;
+  }
+  

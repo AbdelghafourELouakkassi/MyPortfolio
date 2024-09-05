@@ -1,0 +1,36 @@
+.ScrollTop{
+    position:fixed;
+    bottom:0 ;
+    right: -100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition: all 1s ease-in-out ;
+    animation:scroll 3s ease-in-out infinite alternate ;
+}
+
+.ScrollTop.Show{
+   right:0;
+}
+
+
+
+@keyframes scroll{
+    0%{
+        margin: 0 40px 40px;
+    }
+    50%{
+        margin: 0px 40px 70px;
+
+    }
+    100%{
+        margin: 0 40px 40px;
+
+    }
+}

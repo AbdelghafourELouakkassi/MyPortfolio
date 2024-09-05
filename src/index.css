@@ -1,0 +1,72 @@
+
+:root{
+    --background-color: rgb(30,30,30);
+    --elements-title-color:aquamarine;
+    --elements-bg-color:aliceblue;
+    --links-color: white;
+    --hover-links-color:aquamarine;
+    --text-color: white;
+    --text2-color:black;
+}
+
+.light{
+    --background-color:white;
+    --elements-title-color:rgb(24, 15, 23);
+    --hover-links-color:rgb(66, 127, 180);
+    --elements-bg-color:rgb(50, 50, 50);
+    --links-color:black;
+    --text-color: black;
+    --text2-color:white;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color:var(--background-color);
+    color:var(--text-color);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+section{ 
+    min-height:100vh;
+    width:100vw;
+    max-width: 75rem;
+    margin: 0 auto 2rem auto;
+    padding: 1rem 2rem;
+}
+
+h1{
+    color: var(--elements-title-color);
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+button{
+    background-color: var(--elements-bg-color);
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    width: fit-content;
+    border-radius: 2rem;
+    color: var(--text2-color);
+}
+
+
+
+a{
+    text-decoration: none;
+    color:var(--links-color);
+}
+
+
+
+

@@ -1,0 +1,112 @@
+.hero-section {
+  position: relative;
+  padding-block: 2rem;
+}
+
+
+ 
+.hero-section .hero-content {
+  min-height: 80vh;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-inline: 2rem;
+}
+
+.hero-section .hero-content .intro {
+  font-size: 1.5rem;
+}
+
+.hero-section .hero-content span {
+  font-size: 2rem;
+  margin-block: 5px;
+}
+.hero-section .hero-content .myName {
+  color: var(--hover-links-color);
+}
+
+.hero-section .hero-content .description {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-block: 15px;
+  width: 40%;
+  line-height: 1.7rem;
+}
+
+.hero-section .hero-content .hireMe-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-section .profile-picture {
+  height:80vh ;
+  width: 500px;
+  position: absolute;
+  top:0;
+  right: 0;
+  animation:Jump 2s ease-in-out infinite alternate ;
+}
+
+@keyframes Jump{
+  0%{
+    margin: 20px 0 0 0;
+   }
+
+  100%{
+      margin: 0 0 20px 0;
+
+  }
+}
+
+
+
+
+@media screen  and (max-width:330px)  {
+  .hero-section .hero-content{
+    height:130vh;
+  }
+}
+
+@media screen and (max-width:500px) {
+   .hero-section{
+    position: relative;
+   }
+  .hero-section .hero-content{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    align-items: center;
+    z-index:3;
+  }
+ 
+  .hero-section .profile-picture{
+    left:50%;
+    transform: translate(-50%);
+    opacity: 0.6;  
+
+  }
+  
+}
+
+
+@media screen and (max-width:860px){
+  .hero-section .hero-content .description{
+    width: 80%;
+  }
+
+  .hero-section .hero-content{
+    position: relative;
+    top: 0;
+    z-index:3;
+  }
+
+}
+
+
+
+
+
