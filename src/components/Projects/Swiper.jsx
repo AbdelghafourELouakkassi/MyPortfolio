@@ -33,7 +33,7 @@ export default function SwiperUi({Projects}) {
                     <SwiperSlide >
                             <div className='project'>
                                 <img src={project.image.url} width={"100%"} alt="" />
-                                <span className='title'>Ecommerce Website</span>
+                                <span className='title'>{project.title}</span>
                                 <p className='utilities'>{project.utilities.split(" ").map((utl)=><span className='utilitie-style'>{utl}</span>)}</p>
                                 <div className='links'>
                                 <span><a href={project.codeLink} target='_blank' ><FaGithub color='black' size={34}/></a></span>
