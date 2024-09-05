@@ -47,7 +47,7 @@
 
 .swiper {
     width: 80%;
-    min-height: 100vh;
+    min-height: 140vh;
     
   }
   
@@ -60,6 +60,6 @@
     justify-content: center;
     align-items: center;
     border:1px solid;
-    min-height: 110vh;
+    min-height: 140vh;
   }
   
