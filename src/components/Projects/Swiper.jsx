@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FaGithub } from 'react-icons/fa'
@@ -6,12 +6,12 @@ import { GoLinkExternal } from "react-icons/go";
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 
 // import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
+import { Keyboard, Pagination, Navigation } from 'swiper/modules';
 
 export default function SwiperUi({Projects}) {
   return (
@@ -19,34 +19,32 @@ export default function SwiperUi({Projects}) {
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
-        freeMode={true}
-        pagination={{
-          clickable: true,
+        keyboard={{
+          enabled: true,
         }}
-        modules={[FreeMode, Pagination]}
+        autoplay={true}
+        navigation={true}
+        modules={[Keyboard, Pagination, Navigation]}
         className="mySwiper"
       >
-        {
-            Projects?.map((project)=>{
-                return(
-                  <div  key={project.title}>
-                    <SwiperSlide >
-                            <div className='project'>
-                                <img src={project.image.url} width={"100%"} alt="" />
-                                <span className='title'>{project.title}</span>
-                                <p className='utilities'>{project.utilities.split(" ").map((utl)=><span className='utilitie-style'>{utl}</span>)}</p>
-                                <div className='links'>
-                                <span><a href={project.codeLink} target='_blank' ><FaGithub color='black' size={34}/></a></span>
-                                <span><a href={project.liveLink} target='_blank' ><GoLinkExternal color='black' size={34}/></a></span>
-                                </div>
-                            </div>
-                    </SwiperSlide>
-                  </div>
-                  
-                  
-                )
-            })
-        }
+
+              {
+                  Projects?.map(project=>
+                          <SwiperSlide key={project.id} >
+                                  <div className='project'>
+                                      <img src={project.image.url} width={"100%"} alt="" />
+                                      <span className='title'>{project.title}</span>
+                                      <p className='utilities'>{project.utilities.split(" ").map((utl)=><span className='utilitie-style' key={utl}>{utl}</span>)}</p>
+                                      <div className='links'>
+                                      <span><a href={project.codeLink} target='_blank' ><FaGithub color='black' size={34}/></a></span>
+                                      <span><a href={project.liveLink} target='_blank' ><GoLinkExternal color='black' size={34}/></a></span>
+                                      </div>
+                                  </div>
+                          </SwiperSlide>                  
+                        
+                      )
+              }
+        
       </Swiper>
     </>
   );

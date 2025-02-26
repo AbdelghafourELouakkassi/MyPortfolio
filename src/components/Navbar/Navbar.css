@@ -9,8 +9,15 @@
   padding-inline:4rem ;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 1000;  
   
+}
+
+.scrollOver300Y{
+  max-width:100%;
+  background-color:transparent;
+  transition: background  1ms ease-in;
+  backdrop-filter: blur(10px);
 }
 
 
@@ -84,6 +91,8 @@
 .dark-mode{
   display: none;
 }
+
+
 .light-mode,.dark-mode{
 margin-top: 7px;
 font-size: 1.2rem;
@@ -118,6 +127,7 @@ cursor: pointer;
     z-index: 3;
     transition:all 0.4s;
     border-bottom-left-radius: 1rem;
+    padding-top: 50px;
   }
 
   .navbar .menu.show {
@@ -127,7 +137,6 @@ cursor: pointer;
 
   .navbar .menu .menu-link{
     position: relative;
-    right: -100vw;
     color: aliceblue;
   }
   .navbar .menu .theme-switch{

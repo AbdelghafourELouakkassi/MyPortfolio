@@ -1,12 +1,15 @@
 .projects-section{
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:2rem;
+    
 }
+
+
 .projects-section .project .links{
   display: flex;
   justify-content: center;
@@ -24,7 +27,7 @@
 
 }
 .projects-section .project img{
-  margin-bottom:10px;
+  margin-bottom:20px;
 }
 .projects-section .project .utilities{
   margin-top: 30px;
@@ -40,26 +43,31 @@
   background-color: black;
   color:white;
   margin-right: 10px;
-  margin-top: 10px;
+  margin-top: 30px;
   padding: 10px;
   border-radius: 5px;
 }
 
-.swiper {
-    width: 80%;
-    min-height: 120vh;
-    
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border:1px solid;
-    min-height: 120vh;
-  }
-  
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
