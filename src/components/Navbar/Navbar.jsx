@@ -22,7 +22,7 @@ function Navbar() {
         AE
       </div>
       <div className="menu">
-        <a className="menu-link active" href="#home">Home</a>
+        <a className="menu-link active" href="#home">House</a>
         <a className="menu-link " href="#about">About</a>
         <a className="menu-link" href="#skills">Skills</a>
         <a className="menu-link" href="#projects">Projects</a>
